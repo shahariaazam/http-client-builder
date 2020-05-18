@@ -9,11 +9,6 @@
             "email": "mail@shaharia.com"
         }
     ],
-    "config": {
-        "platform": {
-            "php": "7.0.8"
-        }
-    },
     "require": {
         "php": ">=7.0",
         "psr/http-client": "^1.0",
