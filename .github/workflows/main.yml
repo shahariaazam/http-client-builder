@@ -43,7 +43,7 @@ jobs:
 
       # Unit Testing
       - name: Run PHPUnit tests
-        run: ./vendor/bin/phpunit --configuration ./phpunit.xml.dist --bootstrap ./tests/bootstrap.php
+        run: ./vendor/bin/phpunit --configuration ./phpunit.xml.dist
 
       # Coverage report upload to scrutinizer for code ratings
       - name: Downloading scrutinizer ocular.phar
