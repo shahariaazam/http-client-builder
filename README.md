@@ -8,7 +8,7 @@ You can add it in your library and give user flexibility to use custom PSR-18 co
 Just add this library to your `composer.json` file. 
 
 ```
-composer require shahariaazam/flexi-http
+composer require shahariaazam/http-client-builder
 ```
 
 Now if you need any HTTP request in your existing class, just extend your class with `ShahariaAzam\FlexiHTTP\HTTPClientBuilder`.
