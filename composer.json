@@ -1,6 +1,6 @@
 {
-    "name": "shahariaazam/flexi-http",
-    "description": "A flexible, extendible, customizable PSR-18 compatible HTTP client for PHP. You can add it in your library and give user flexibility to use custom PSR-18 compatible HTTP client with it.",
+    "name": "shahariaazam/http-client-builder",
+    "description": "A flexible, extendible, customizable PSR-18 compatible HTTP client builder for PHP. You can add it in your library and give user flexibility to use custom PSR-18 compatible HTTP client with it.",
     "type": "library",
     "license": "MIT",
     "authors": [
@@ -23,18 +23,22 @@
         "phpunit/phpunit": "^6.5",
         "squizlabs/php_codesniffer": "^3.5",
         "friendsofphp/php-cs-fixer": "^2.16",
-        "php-http/mock-client": "^1.3",
         "phpcompatibility/php-compatibility": "^9.3"
     },
     "autoload": {
         "psr-4": {
-            "ShahariaAzam\\FlexiHTTP\\": "src"
+            "ShahariaAzam\\HTTPClientBuilder\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "ShahariaAzam\\FlexiHTTP\\Tests\\": "tests/src"
+            "ShahariaAzam\\HTTPClientBuilder\\Tests\\": "tests"
         }
+    },
+    "scripts": {
+        "phpunit": "./vendor/bin/phpunit --configuration ./phpunit.xml.dist",
+        "phpcs": "./vendor/bin/phpcs",
+        "php-cs-fixer": "./vendor/bin/php-cs-fixer fix -v --dry-run --stop-on-violation --using-cache=no --path-mode=intersection"
     },
     "suggest": {
         "php-http/curl-client": "cURL client for PHP-HTTP",
