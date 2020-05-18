@@ -1,0 +1,44 @@
+{
+    "name": "shahariaazam/flexi-http",
+    "description": "A flexible, extendible, customizable PSR-18 compatible HTTP client for PHP. You can add it in your library and give user flexibility to use custom PSR-18 compatible HTTP client with it.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Shaharia Azam",
+            "email": "mail@shaharia.com"
+        }
+    ],
+    "config": {
+        "platform": {
+            "php": "7.0.8"
+        }
+    },
+    "require": {
+        "php": ">=7.0",
+        "psr/http-client": "^1.0",
+        "nyholm/psr7": "^0.2.3"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^6.5",
+        "squizlabs/php_codesniffer": "^3.5",
+        "friendsofphp/php-cs-fixer": "^2.16",
+        "php-http/mock-client": "^1.3",
+        "phpcompatibility/php-compatibility": "^9.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "ShahariaAzam\\FlexiHTTP\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "ShahariaAzam\\FlexiHTTP\\Tests\\": "tests/src"
+        }
+    },
+    "suggest": {
+        "php-http/curl-client": "cURL client for PHP-HTTP",
+        "symfony/http-client": "HTTP client provided by Symfony team"
+    }
+}
+

@@ -1,0 +1,9 @@
+/vendor/
+/.idea/
+/.git/
+/build/
+/.vscode/*
+/.history/
+composer.lock
+phpunit.xml
+phpcs.xml
