@@ -32,8 +32,8 @@
     },
     "scripts": {
         "phpunit": "./vendor/bin/phpunit --configuration ./phpunit.xml.dist",
-        "phpcs": "./vendor/bin/phpcs",
-        "php-cs-fixer": "./vendor/bin/php-cs-fixer fix -v --dry-run --stop-on-violation --using-cache=no --path-mode=intersection"
+        "phpcs": "./vendor/bin/phpcs -n",
+        "php-cs-fixer": "./vendor/bin/php-cs-fixer fix -v --using-cache=no --path-mode=intersection"
     },
     "suggest": {
         "php-http/curl-client": "cURL client for PHP-HTTP",
