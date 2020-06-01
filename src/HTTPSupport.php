@@ -29,19 +29,23 @@ use Nyholm\Psr7\Request;
 use Psr\Http\Client\ClientExceptionInterface;
 use Psr\Http\Client\ClientInterface;
 use Psr\Http\Message\ResponseInterface;
+use Psr\Http\Message\StreamInterface;
+use Psr\Http\Message\UriInterface;
 use ShahariaAzam\HTTPClientBuilder\Exception\FlexiHTTPException;
 use ShahariaAzam\HTTPClientBuilder\Traits\ClientTrait;
 use ShahariaAzam\HTTPClientBuilder\Traits\HeadersTrait;
 
-abstract class HTTPClientBuilder
+abstract class HTTPSupport
 {
     use HeadersTrait, ClientTrait;
 
     /**
-     * @param $method
-     * @param $uri
+     * Make HTTP request
+     *
+     * @param string $method
+     * @param string|UriInterface $uri
      * @param array $headers
-     * @param null $body
+     * @param string|null|resource|StreamInterface $body
      * @param string $version
      * @return ResponseInterface
      * @throws ClientExceptionInterface
@@ -58,9 +62,9 @@ abstract class HTTPClientBuilder
         return $this->getHttpClient()->sendRequest(new Request(
             $method,
             $uri,
-            $headers = [],
-            $body = null,
-            $version = '1.1'
+            $headers,
+            $body,
+            $version
         ));
     }
 }

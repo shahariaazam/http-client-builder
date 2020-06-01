@@ -32,6 +32,6 @@
 
 namespace ShahariaAzam\HTTPClientBuilder;
 
-class HTTPClient extends HTTPClientBuilder
+class HTTPClient extends HTTPSupport
 {
 }
