@@ -1,5 +1,5 @@
 {
-    "name": "shahariaazam/http-client-builder",
+    "name": "shahariaazam/http-client-support",
     "description": "A flexible, extendible, customizable PSR-18 compatible HTTP client builder for PHP. You can add it in your library and give user flexibility to use custom PSR-18 compatible HTTP client with it.",
     "type": "library",
     "license": "MIT",
