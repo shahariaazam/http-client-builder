@@ -27,7 +27,7 @@ See following example.
 
 namespace ShahariaAzam\HTTPClientBuilder;
 
-class YourClass extends HTTPClientBuilder
+class YourClass extends HTTPSupport
 {
     // Now your class have the following method already
     // public function setHttpClient(ClientInterface $httpClient)
