@@ -23,7 +23,7 @@
  * THE SOFTWARE.
  */
 
-namespace ShahariaAzam\HTTPClientBuilder;
+namespace ShahariaAzam\HTTPClientSupport;
 
 use Nyholm\Psr7\Request;
 use Psr\Http\Client\ClientExceptionInterface;
@@ -31,9 +31,9 @@ use Psr\Http\Client\ClientInterface;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\StreamInterface;
 use Psr\Http\Message\UriInterface;
-use ShahariaAzam\HTTPClientBuilder\Exception\FlexiHTTPException;
-use ShahariaAzam\HTTPClientBuilder\Traits\ClientTrait;
-use ShahariaAzam\HTTPClientBuilder\Traits\HeadersTrait;
+use ShahariaAzam\HTTPClientSupport\Exception\FlexiHTTPException;
+use ShahariaAzam\HTTPClientSupport\Traits\ClientTrait;
+use ShahariaAzam\HTTPClientSupport\Traits\HeadersTrait;
 
 abstract class HTTPSupport
 {

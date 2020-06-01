@@ -30,7 +30,7 @@
  */
 
 
-namespace ShahariaAzam\HTTPClientBuilder;
+namespace ShahariaAzam\HTTPClientSupport;
 
 class HTTPClient extends HTTPSupport
 {

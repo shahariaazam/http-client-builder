@@ -23,7 +23,7 @@
  * THE SOFTWARE.
  */
 
-namespace ShahariaAzam\HTTPClientBuilder\Traits;
+namespace ShahariaAzam\HTTPClientSupport\Traits;
 
 use Psr\Http\Client\ClientInterface;
 

@@ -30,7 +30,7 @@
  */
 
 
-namespace ShahariaAzam\HTTPClientBuilder\Exception;
+namespace ShahariaAzam\HTTPClientSupport\Exception;
 
 class FlexiHTTPException extends \Exception
 {

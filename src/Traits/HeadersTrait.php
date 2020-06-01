@@ -23,7 +23,7 @@
  * THE SOFTWARE.
  */
 
-namespace ShahariaAzam\HTTPClientBuilder\Traits;
+namespace ShahariaAzam\HTTPClientSupport\Traits;
 
 trait HeadersTrait
 {

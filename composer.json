@@ -22,12 +22,12 @@
     },
     "autoload": {
         "psr-4": {
-            "ShahariaAzam\\HTTPClientBuilder\\": "src"
+            "ShahariaAzam\\HTTPClientSupport\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "ShahariaAzam\\HTTPClientBuilder\\Tests\\": "tests"
+            "ShahariaAzam\\HTTPClientSupport\\Tests\\": "tests"
         }
     },
     "scripts": {

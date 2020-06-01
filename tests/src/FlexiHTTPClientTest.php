@@ -6,14 +6,14 @@
  */
 
 
-namespace ShahaiaAzam\HTTPClientBuilder\Tests;
+namespace ShahaiaAzam\HTTPClientSupport\Tests;
 
 
 use PHPUnit\Framework\TestCase;
 use Psr\Http\Client\ClientInterface;
 use Psr\Http\Message\ResponseInterface;
-use ShahariaAzam\HTTPClientBuilder\Exception\FlexiHTTPException;
-use ShahariaAzam\HTTPClientBuilder\HTTPClient;
+use ShahariaAzam\HTTPClientSupport\Exception\FlexiHTTPException;
+use ShahariaAzam\HTTPClientSupport\HTTPClient;
 
 class FlexiHTTPClientTest extends TestCase
 {
